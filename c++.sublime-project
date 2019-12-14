@@ -1,0 +1,48 @@
+{
+  "folders": [
+    {
+      "name": "source",
+      "path": "src",
+      "file_exclude_patterns":
+      [
+        "*.vcproj",
+        "*.vcxproj",
+        "*.sln",
+        "*.gitignore",
+        "*.gitmodules",
+        "*.vcxproj.*",
+      ],
+      "folder_exclude_patterns":
+      [
+        "out",
+        "third_party",
+        ".git",
+      ],
+    },
+  ],
+  "settings":
+    {
+         "sublimegdb_workingdir": "/home/espen/development/Sudoku_Solver/build/",
+         // put your arguments hear
+         "sublimegdb_arguments": "",
+         // NOTE: You MUST provide --interpreter=mi for the plugin to work
+         "sublimegdb_commandline": "gdb --interpreter=mi --args ./Sudoku_solver"
+    },
+  "build_systems":
+  [
+    {
+      "name": "Build Project",
+      "cmd": ["make"],
+      "working_dir": "$project_path",
+      "path": "/usr/bin/:/bin/",
+      "variants":
+      [
+        {
+          "name": "Clean",
+          "cmd": ["make", "clean"],
+          "path": "/usr/bin/:/bin/",
+        }
+      ]
+    },
+  ],
+}
