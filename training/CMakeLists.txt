@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( num_classifier )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( num_classifier train.cpp train_class.cpp train_class.h)
+target_link_libraries( num_classifier ${OpenCV_LIBS} )

@@ -2,7 +2,7 @@
   "folders": [
     {
       "name": "source",
-      "path": "src",
+      "path": "./",
       "file_exclude_patterns":
       [
         "*.vcproj",
@@ -22,7 +22,7 @@
   ],
   "settings":
     {
-         "sublimegdb_workingdir": "/home/espen/development/Sudoku_Solver/build/",
+         "sublimegdb_workingdir": "/home/espen/projects/Sudoku_Solver/build/",
          // put your arguments hear
          "sublimegdb_arguments": "",
          // NOTE: You MUST provide --interpreter=mi for the plugin to work
